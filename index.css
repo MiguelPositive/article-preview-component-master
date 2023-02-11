@@ -237,3 +237,28 @@ p {
     height: calc(2.3em + 2.3vw);
   }
 }
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: calc(1em + 1vw);
+  }
+
+  p {
+    font-size: calc(0.6em + 0.6vw);
+    line-height: calc(0.8em + 0.8vw);
+  }
+
+  .share {
+    width: calc(1.7em + 1.7vw);
+    height: calc(1.7em + 1.7vw);
+  }
+
+  .text-container {
+    padding: calc(1.9em + 1.9vw);
+  }
+
+  .avatar-image {
+    width: calc(2.2em + 2.2vw);
+    height: calc(2.2em + 2.2vw);
+  }
+}
