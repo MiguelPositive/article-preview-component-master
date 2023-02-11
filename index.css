@@ -270,7 +270,7 @@ p {
   }
 
   h1 {
-    font-size: calc(0.9em + 1vw);
+    font-size: calc(0.9em + 0.9vw);
   }
 
   p {
@@ -290,5 +290,47 @@ p {
   .avatar-image {
     width: calc(2.2em + 2.2vw);
     height: calc(2.2em + 2.2vw);
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    margin-left: calc(1em + 1vw);
+    margin-right: calc(1em + 1vw);
+
+    margin-bottom: calc(2em + 2vw);
+  }
+
+  h1 {
+    font-size: calc(1em + 1vw);
+  }
+
+  p {
+    font-size: calc(0.8em + 0.8vw);
+    line-height: calc(1em + 1vw);
+  }
+
+  .share {
+    width: calc(2em + 2vw);
+    height: calc(2em + 2vw);
+  }
+
+  .text-container {
+    padding: calc(1.9em + 1.9vw);
+  }
+
+  .avatar-image {
+    width: calc(2.5em + 2.5vw);
+    height: calc(2.5em + 2.5vw);
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    margin-bottom: calc(1em + 1vw);
+  }
+
+  .text-container {
+    padding: calc(1.5em + 1.5vw);
   }
 }
