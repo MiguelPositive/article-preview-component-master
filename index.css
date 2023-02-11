@@ -104,6 +104,7 @@ p {
   right: 17.8em;
 
   background-color: #48556b;
+  opacity: 0;
 
   width: calc(7em + 7vw);
   padding-left: calc(0.6em + 0.6vw);
