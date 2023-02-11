@@ -1,0 +1,122 @@
+@font-face {
+  src: url("./fonts/Manrope-Light.ttf");
+  font-family: "Manrope";
+}
+
+@font-face {
+  src: url("./fonts/Manrope-SemiBold.ttf");
+  font-family: "ManropeBold";
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Manrope";
+}
+
+body {
+  margin: 0;
+
+  min-width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #edf2f8;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+
+  margin-left: calc(10em + 10vw);
+  margin-right: calc(10em + 10vw);
+  border-radius: calc(0.4em + 0.4vw);
+
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  font-family: "ManropeBold";
+  color: #49556c;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+p {
+  color: #9098a1;
+  font-weight: bold;
+}
+
+.image-container {
+  background-image: url("./images/drawers.jpg");
+  background-size: cover;
+}
+
+.text-container {
+  background-color: white;
+
+  padding: calc(1em + 1vw);
+}
+
+.avatar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.avatar-image {
+  background-image: url("./images/avatar-michelle.jpg");
+  background-size: cover;
+
+  width: calc(2em + 2vw);
+  height: calc(2em + 2vw);
+  margin-right: calc(1em + 1vw);
+  border-radius: 200%;
+}
+
+.share {
+  width: calc(2em + 2vw);
+  height: calc(2em + 2vw);
+  border-radius: 200%;
+
+  background-color: #dfe7f1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-person p {
+  margin-top: 0;
+}
+
+.share img {
+  width: 50%;
+}
+
+@media (max-width: 1440px) {
+  h1 {
+    font-size: calc(0.8em + 0.8vw);
+  }
+
+  p {
+    font-size: calc(0.45em + 0.45vw);
+    line-height: calc(0.7em + 0.7vw);
+  }
+
+  .share {
+    width: calc(1.5em + 1.5vw);
+    height: calc(1.5em + 1.5vw);
+  }
+}
