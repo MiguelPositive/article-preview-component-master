@@ -85,6 +85,7 @@ p {
   border-radius: 200%;
 
   background-color: #dfe7f1;
+  cursor: pointer;
 
   display: flex;
   justify-content: center;
@@ -97,12 +98,43 @@ p {
   align-items: center;
 }
 
-.info-person p {
-  margin-top: 0;
+.tooltip {
+  position: absolute;
+  top: 26em;
+  right: 17.8em;
+
+  background-color: #48556b;
+
+  width: calc(7em + 7vw);
+  padding-left: calc(0.6em + 0.6vw);
+  padding-right: calc(0.6em + 0.6vw);
+  border-radius: calc(0.3em + 0.3vw);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  z-index: 1;
 }
 
-.share img {
-  width: 50%;
+.tooltip::after {
+  content: "";
+
+  position: absolute;
+  top: calc(1em + 1vw);
+
+  transform: rotate(45deg);
+
+  width: calc(1em + 1vw);
+  height: calc(1em + 1vw);
+
+  background-color: #48556b;
+
+  z-index: -1;
+}
+
+.info-person p {
+  margin-top: 0;
 }
 
 @media (max-width: 1440px) {
