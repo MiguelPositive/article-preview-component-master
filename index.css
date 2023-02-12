@@ -1,11 +1,13 @@
 @font-face {
   src: url("./fonts/Manrope-Light.ttf");
   font-family: "Manrope";
+  font-display: swap;
 }
 
 @font-face {
   src: url("./fonts/Manrope-SemiBold.ttf");
   font-family: "ManropeBold";
+  font-display: swap;
 }
 
 * {
